@@ -1,0 +1,19 @@
+@mixin breakepoints($screensize) {
+    @if $screensize==mobile {
+        @media (max-width:575px) {
+            @content;
+        }
+    }
+
+    @else if $screensize==medium {
+        @media (max-width:991px) {
+            @content;
+        }
+    }
+
+    @else if $screensize==large {
+        @media (min-width:992px) {
+            @content;
+        }
+    }
+}

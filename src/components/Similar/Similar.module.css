@@ -1,0 +1,48 @@
+.similar {
+  margin: 4rem 0 2rem;
+  padding: 2rem;
+  background-color: var(--similar_div);
+  color: var(--color-text);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.similar h1 {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 2rem;
+}
+
+.similar .similarData {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  z-index: 1000;
+  scroll-padding-inline: .9rem;
+  -ms-scroll-snap-type: inline mandatory;
+      scroll-snap-type: inline mandatory;
+  overflow-x: auto;
+  gap: 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+.similar .similarData .Moive_Similar_Card {
+  scroll-snap-align: start;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  width: 80%;
+}
+
+.similar .similarData .Moive_Similar_Card:hover {
+  -webkit-transform: translateY(17px) scale(1.04);
+          transform: translateY(17px) scale(1.04);
+}
+
+.similar .similarData .Moive_Similar_Card .image img {
+  border-radius: 20px;
+}

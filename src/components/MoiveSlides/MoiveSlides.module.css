@@ -1,0 +1,236 @@
+.Moives {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--background);
+  position: relative;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.Moives .overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overley-2);
+  -webkit-backdrop-filter: blur(0.39rem);
+          backdrop-filter: blur(0.39rem);
+  z-index: 100;
+}
+
+.Moives .MoivesSlide {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.Moives .MoivesSlide .show_more {
+  z-index: 1000;
+}
+
+.Moives .MoivesSlide .show_more:hover p {
+  background-color: rgba(8, 15, 27, 0.815);
+}
+
+.Moives .MoivesSlide .show_more p {
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: rgba(16, 30, 55, 0.815);
+  font-size: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+  padding: .5rem 1.3rem;
+}
+
+@media (max-width: 575px) {
+  .Moives .MoivesSlide .show_more p {
+    font-size: 13px;
+  }
+}
+
+.Moives .MoivesSlide .barTitle {
+  z-index: 1000;
+  background: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(#020913));
+  background: linear-gradient(to right, var(--main-color), #020913);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 3rem 0;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.835);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.835);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Moives .MoivesSlide .barTitle:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.Moives .MoivesSlide .CategoryMoives {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  z-index: 1000;
+  scroll-padding-inline: .9rem;
+  -ms-scroll-snap-type: inline mandatory;
+      scroll-snap-type: inline mandatory;
+  -webkit-transition: .5s;
+  transition: .5s;
+  gap: 1rem;
+  overflow-x: auto;
+  width: 88%;
+  border-radius: 10px;
+  padding: 1rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard {
+  font-size: 1rem;
+  padding: 0rem;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  height: auto;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  position: relative;
+  color: var(--color-text);
+  background: var(--card-pg);
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard:hover {
+  -webkit-transform: translateY(17px) scale(1.04);
+          transform: translateY(17px) scale(1.04);
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a {
+  text-decoration: none;
+  color: white;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a .image {
+  width: 100%;
+  height: 100%;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a .image img {
+  border-radius: 10px;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a .title {
+  display: block;
+  margin-inline: 10px;
+  color: var(--color-text);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a .release {
+  color: var(--color-text);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-block: .5rem;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a .icons .icon {
+  color: #951313;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a .icons .iconLi {
+  color: white;
+}
+
+.Moives .MoivesSlide .CategoryMoives .MoiveCard a .vote {
+  position: absolute;
+  top: 13px;
+  right: -5px;
+  width: 55px;
+  height: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 4px;
+  background-color: #d60808;
+  font-size: .7rem;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+::-webkit-scrollbar {
+  height: 1rem;
+  width: 1rem;
+  background: black;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid #190133;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), to(#05306b));
+  background: linear-gradient(to bottom, var(--main-color), #05306b);
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+}

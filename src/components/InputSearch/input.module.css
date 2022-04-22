@@ -1,0 +1,85 @@
+.input {
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  display: block;
+  width: 40vw;
+  margin: 1rem auto;
+  border: none;
+  outline: none;
+  padding: .5rem .8rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  line-height: .8rem;
+  height: 2rem;
+  letter-spacing: 2px;
+  color: black;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.781);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.781);
+}
+
+@media (max-width: 575px) {
+  .input {
+    font-size: .5rem;
+    line-height: .5rem;
+    width: 20vw;
+    margin: 1rem auto;
+  }
+}
+
+.input:hover {
+  outline: 3px solid #38386e;
+}
+
+.input::-webkit-input-placeholder {
+  -webkit-transform: .5s;
+          transform: .5s;
+  font-size: .8rem;
+}
+
+.input:-ms-input-placeholder {
+  transform: .5s;
+  font-size: .8rem;
+}
+
+.input::-ms-input-placeholder {
+  transform: .5s;
+  font-size: .8rem;
+}
+
+.input::placeholder {
+  -webkit-transform: .5s;
+          transform: .5s;
+  font-size: .8rem;
+}
+
+@media (max-width: 575px) {
+  .input::-webkit-input-placeholder {
+    font-size: .7rem;
+  }
+  .input:-ms-input-placeholder {
+    font-size: .7rem;
+  }
+  .input::-ms-input-placeholder {
+    font-size: .7rem;
+  }
+  .input::placeholder {
+    font-size: .7rem;
+  }
+}
+
+.input:focus::-webkit-input-placeholder {
+  display: none;
+}
+
+.input:focus:-ms-input-placeholder {
+  display: none;
+}
+
+.input:focus::-ms-input-placeholder {
+  display: none;
+}
+
+.input:focus::placeholder {
+  display: none;
+}

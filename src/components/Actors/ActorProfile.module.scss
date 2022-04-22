@@ -1,0 +1,120 @@
+@import "../../Sass/mixin";
+
+.Actor_profile {
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    transition: .5s;
+    position: relative;
+
+    .Actor_info {
+
+        @include breakepoints(large) {
+            height: calc(100vh - 4rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .Acto_name {
+            margin: 0 0 1rem;
+            color: var(--color-text);
+            transition: .5s;
+
+            @include breakepoints(large) {
+                position: absolute;
+                top: 10vh;
+                left: 26vw;
+                font-size: 1.5rem;
+            }
+
+            h1 {
+                letter-spacing: 2px;
+                color: var(--color-text);
+                transition: .5s;
+
+            }
+
+            small {
+                display: block;
+                transition: .5s;
+
+            }
+
+        }
+
+
+        .image {
+
+            @include breakepoints(large) {
+                flex-basis: 80vw;
+            }
+
+            img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .Actor_personal_info {
+            color: var(--color-text);
+
+            @include breakepoints(large) {
+                font-size: 1.3rem;
+                text-align: left;
+            }
+
+            .biography {
+                transition: .5s;
+                width: 95%;
+
+                @include breakepoints(large) {
+                    margin-top: 6rem;
+                }
+            }
+
+            .place_of_birth {
+                transition: .5s;
+                margin: 2rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                @include breakepoints(large) {
+                    justify-content: flex-start;
+                }
+
+            }
+
+        }
+
+    }
+
+    .Actor_movies {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 2rem 1rem;
+
+        .movie_card {
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+                img {
+                    transform: rotate(10deg);
+                }
+            }
+
+            img {
+                max-width: 100%;
+                border-radius: 20px;
+                transition: .5s;
+            }
+        }
+
+    }
+
+
+}

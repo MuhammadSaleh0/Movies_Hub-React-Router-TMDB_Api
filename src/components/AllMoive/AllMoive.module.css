@@ -1,0 +1,204 @@
+.allMoive {
+  padding-bottom: 2rem;
+  width: 95%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  -webkit-transition: .8s;
+  transition: .8s;
+  background-color: var(--background);
+}
+
+@media (max-width: 575px) {
+  .allMoive {
+    width: 85%;
+  }
+}
+
+.allMoive h1 {
+  color: var(--main-color-1);
+  display: block;
+  letter-spacing: 2px;
+  padding: 2rem 0;
+  -webkit-transform: .5s;
+          transform: .5s;
+  text-transform: uppercase;
+}
+
+.allMoive .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.allMoive .form input {
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  display: block;
+  width: 90vw;
+  border: none;
+  outline: none;
+  padding: .5rem .8rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  line-height: .8rem;
+  height: 2rem;
+  letter-spacing: 2px;
+  color: black;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.781);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.781);
+}
+
+@media (max-width: 575px) {
+  .allMoive .form input {
+    font-size: .5rem;
+    line-height: .5rem;
+    width: 70vw;
+    margin: 1rem auto;
+  }
+}
+
+.allMoive .form input:hover {
+  outline: 3px solid #38386e;
+}
+
+.allMoive .form input::-webkit-input-placeholder {
+  -webkit-transform: .5s;
+          transform: .5s;
+  font-size: .8rem;
+}
+
+.allMoive .form input:-ms-input-placeholder {
+  transform: .5s;
+  font-size: .8rem;
+}
+
+.allMoive .form input::-ms-input-placeholder {
+  transform: .5s;
+  font-size: .8rem;
+}
+
+.allMoive .form input::placeholder {
+  -webkit-transform: .5s;
+          transform: .5s;
+  font-size: .8rem;
+}
+
+@media (max-width: 575px) {
+  .allMoive .form input::-webkit-input-placeholder {
+    font-size: .7rem;
+  }
+  .allMoive .form input:-ms-input-placeholder {
+    font-size: .7rem;
+  }
+  .allMoive .form input::-ms-input-placeholder {
+    font-size: .7rem;
+  }
+  .allMoive .form input::placeholder {
+    font-size: .7rem;
+  }
+}
+
+.allMoive .form input:focus::-webkit-input-placeholder {
+  display: none;
+}
+
+.allMoive .form input:focus:-ms-input-placeholder {
+  display: none;
+}
+
+.allMoive .form input:focus::-ms-input-placeholder {
+  display: none;
+}
+
+.allMoive .form input:focus::placeholder {
+  display: none;
+}
+
+.allMoive .form button {
+  border: 0;
+  outline: 0;
+  padding: .5rem 1rem;
+  background-color: var(--main-color-1);
+  color: var(--background);
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.allMoive .form button:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  background-color: var(--color-text);
+  color: var(--background);
+}
+
+.allMoive .MoivesGrid {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem 1rem;
+  width: 100%;
+}
+
+.allMoive .MoivesGrid .MoiveCard {
+  border-radius: 10px;
+  -webkit-transition: .8s;
+  transition: .8s;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.allMoive .MoivesGrid .MoiveCard:hover {
+  -webkit-transform: translateY(17px) scale(1.04);
+          transform: translateY(17px) scale(1.04);
+}
+
+.allMoive .MoivesGrid .MoiveCard a .image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.allMoive .MoivesGrid .MoiveCard a .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.allMoive .MoivesGrid .MoiveCard a .image .replacment {
+  width: 100%;
+  height: 100%;
+}
+
+.allMoive .addMore {
+  cursor: pointer;
+  padding: .4rem 1.2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #08284f;
+  -webkit-box-shadow: 0 0 8px rgba(23, 23, 23, 0.422);
+          box-shadow: 0 0 8px rgba(23, 23, 23, 0.422);
+}
+
+.allMoive .addMore:hover {
+  background-color: var(--main-color);
+  letter-spacing: 2px;
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}

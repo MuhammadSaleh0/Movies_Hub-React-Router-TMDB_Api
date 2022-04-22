@@ -1,0 +1,135 @@
+footer {
+  width: 100%;
+  overflow: hidden;
+  height: calc(100vh - 4rem);
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  footer {
+    height: auto;
+  }
+}
+
+footer .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer .image img {
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  footer .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+footer .container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  footer .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+footer .container .logo a {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  footer .container .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+footer .container .Cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  padding: 2rem;
+  background-color: rgba(31, 31, 31, 0.678);
+  -webkit-backdrop-filter: blur(0.22rem);
+          backdrop-filter: blur(0.22rem);
+  border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+  footer .container .Cards {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+footer .container .Cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .Cards .card a {
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 991px) {
+  footer .container .Cards .card a {
+    font-size: .7rem;
+  }
+}
+
+footer .container .Cards .card a:hover {
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+  background-color: rgba(18, 18, 18, 0.849);
+  border-radius: 20px;
+}

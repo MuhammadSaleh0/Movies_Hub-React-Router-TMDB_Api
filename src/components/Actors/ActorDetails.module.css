@@ -1,0 +1,110 @@
+.ActorDetails {
+  background-color: var(--background);
+  width: 95%;
+  height: auto;
+  width: 100%;
+  -webkit-transition: .8s;
+  transition: .8s;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.ActorDetails .nav {
+  position: relative;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.ActorDetails .nav .NavItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  gap: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  color: white;
+}
+
+.ActorDetails .nav .NavItem:hover {
+  -webkit-transform: scale(1.16);
+          transform: scale(1.16);
+}
+
+.ActorDetails .nav .NavItem .NavIcon {
+  color: #bb0c2c;
+}
+
+.ActorDetails .nav .NavItem .Navtext {
+  font-weight: bold;
+}
+
+.ActorDetails .nav .NavItem .Navtext span {
+  color: #fd4430;
+}
+
+.ActorDetails .nav .regular {
+  background-color: var(--color-text) !important;
+  color: var(--background) !important;
+  border-radius: 20px !important;
+}
+
+.ActorDetails .Actor {
+  color: var(--color-text);
+}
+
+.ActorDetails .Actor h1 {
+  letter-spacing: 2px;
+  font-size: 2.3rem;
+  margin: 1.3rem 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.ActorDetails .Actor .ActorContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.ActorDetails .Actor .ActorContainer .actorData {
+  cursor: pointer;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.ActorDetails .Actor .ActorContainer .actorData:hover {
+  -webkit-transform: rotate(10deg) scale(1.05);
+          transform: rotate(10deg) scale(1.05);
+}
+
+.ActorDetails .Actor .ActorContainer .actorData img {
+  border-radius: 20px;
+}

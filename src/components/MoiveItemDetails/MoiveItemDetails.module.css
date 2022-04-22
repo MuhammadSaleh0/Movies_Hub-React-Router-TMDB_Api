@@ -1,0 +1,506 @@
+.MoiveDetails {
+  background-color: var(--background);
+  color: var(--color-text);
+  position: relative;
+  height: calc(100vh - 4rem);
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails {
+    height: auto;
+  }
+}
+
+.MoiveDetails .image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .image {
+    width: 100%;
+    height: calc(100vh - 1rem);
+  }
+}
+
+.MoiveDetails .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.MoiveDetails .overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overley-3);
+  -webkit-backdrop-filter: blur(0.2rem);
+          backdrop-filter: blur(0.2rem);
+  z-index: 100;
+}
+
+.MoiveDetails .gray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(31, 31, 31, 0.774)), color-stop(rgba(59, 59, 59, 0.705)), color-stop(rgba(20, 20, 20, 0.63)), to(transparent));
+  background: linear-gradient(to right, rgba(31, 31, 31, 0.774), rgba(59, 59, 59, 0.705), rgba(20, 20, 20, 0.63), transparent);
+  z-index: 100;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .gray {
+    display: none;
+  }
+}
+
+.MoiveDetails .Content {
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .Content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.MoiveDetails .Content .MoiveTitle {
+  z-index: 10000;
+}
+
+@media (min-width: 992px) {
+  .MoiveDetails .Content .MoiveTitle {
+    position: absolute;
+    top: 3vh;
+    left: 28vw;
+  }
+}
+
+.MoiveDetails .Content .MoiveTitle h2 {
+  letter-spacing: 3px;
+  padding: 0;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .Content .MoiveTitle h2 {
+    line-height: 1.6;
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+}
+
+.MoiveDetails .Content .MoiveTitle .type {
+  font-style: italic;
+  line-height: .6;
+  margin-bottom: 1.6em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .Content .MoiveTitle .type {
+    margin-inline: auto;
+  }
+}
+
+.MoiveDetails .Content .MoiveTitle .type small {
+  color: #dfdbdb;
+  padding-right: 5px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.MoiveDetails .Content .MoiveContent {
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 2rem;
+  z-index: 1000;
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .Content .MoiveContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .MoiveDetails .Content .MoiveContent .MoiveData {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .Content .MoiveContent .MoiveData {
+    height: auto;
+  }
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .starts .star {
+  color: var(--main-color-1);
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .Popularity_Votes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 1.6;
+  margin: .4rem 0;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .Popularity_Votes {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-inline: auto;
+    margin-block: 1rem;
+    gap: 3rem;
+  }
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .Popularity_Votes .vote_pop {
+  color: var(--color-text);
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .Popularity_Votes .vote_pop span {
+  color: var(--main-color-1);
+  display: inline-block;
+  padding-inline: 10px;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 15px;
+  margin-block: 10px;
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--main-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .item:hover {
+  background-color: #020913;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .item * {
+  width: 22px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .item .imdb {
+  color: #c7a11a;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .item .hd {
+  color: #e66756;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .favorite * {
+  color: #e71010 !important;
+  -webkit-animation: heartScale .2s linear;
+          animation: heartScale .2s linear;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .watchLater * {
+  color: #929ddd !important;
+  -webkit-animation: heartScale .2s linear;
+          animation: heartScale .2s linear;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .heart {
+  cursor: pointer;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .heart small {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 50px;
+  right: 0;
+  display: block;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .icons_Vote_Popularity .brands .heart * {
+  color: white;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .description {
+  font-weight: bolder;
+  line-height: 1.6;
+  margin-block: 1.8rem;
+  max-width: 100%;
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .watchTrailer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(#020913));
+  background: linear-gradient(to right, var(--main-color), #020913);
+  cursor: pointer;
+  padding: .6rem 1.9rem;
+  letter-spacing: 3px;
+  margin-block: 1rem;
+}
+
+@media (max-width: 991px) {
+  .MoiveDetails .Content .MoiveContent .MoiveData .watchTrailer {
+    margin-inline: auto;
+  }
+}
+
+.MoiveDetails .Content .MoiveContent .MoiveData .watchTrailer:hover {
+  background: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(#071427));
+  background: linear-gradient(to right, var(--main-color), #071427);
+  -webkit-transform: scale(1.16);
+          transform: scale(1.16);
+}
+
+.MoiveDetails .Content .MoiveContent .MoivePoser {
+  text-align: left;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.MoiveDetails .Content .MoiveContent .MoivePoser img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: 90%;
+}
+
+@media (max-width: 575px) {
+  .MoiveDetails .Content .MoiveContent .MoivePoser img {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+
+.MoiveDetails .videoContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1000000;
+  background-color: var(--background);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation: videoShow 1.5s linear;
+          animation: videoShow 1.5s linear;
+}
+
+.MoiveDetails .videoContent .close {
+  text-align: right;
+  margin-left: auto;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.MoiveDetails .videoContent h2 {
+  padding: 1rem 0;
+  color: var(--main-color-1);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.MoiveDetails .videoContent .iframe {
+  padding: 2rem;
+}
+
+.MoiveDetails .hideVideo {
+  top: -200% !important;
+  opacity: .1 !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@-webkit-keyframes videoShow {
+  0% {
+    top: -200%;
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  70% {
+    top: 100px;
+    opacity: 1;
+  }
+  90% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes videoShow {
+  0% {
+    top: -200%;
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  70% {
+    top: 100px;
+    opacity: 1;
+  }
+  90% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes heartScale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes heartScale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../Sass/mixin";
+
+.input {
+    transition: .5s;
+    position: relative;
+    display: block;
+    width: 40vw;
+    margin: 1rem auto;
+    border: none;
+    outline: none;
+    padding: .5rem .8rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    line-height: .8rem;
+    height: 2rem;
+    letter-spacing: 2px;
+    color: hsl(0, 13%, 0%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.781);
+
+    @include breakepoints(mobile) {
+        font-size: .5rem;
+        line-height: .5rem;
+        width: 20vw;
+        margin: 1rem auto;
+
+    }
+
+    &:hover {
+        outline: 3px solid rgb(56, 56, 110);
+    }
+
+    &::placeholder {
+        transform: .5s;
+        font-size: .8rem;
+
+        @include breakepoints(mobile) {
+            font-size: .7rem;
+        }
+    }
+
+    &:focus::placeholder {
+        display: none;
+    }
+}

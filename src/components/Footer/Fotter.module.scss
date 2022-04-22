@@ -1,0 +1,109 @@
+@import "../../Sass/mixin";
+
+
+footer {
+    width: 100%;
+    overflow: hidden;
+    height: calc(100vh - 4rem);
+    position: relative;
+
+    @include breakepoints(medium) {
+        height: auto;
+    }
+
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            max-width: 100%;
+
+            @include breakepoints(medium) {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 10000;
+        display: flex;
+        padding: 2rem;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        @include breakepoints(medium) {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .logo {
+            a {
+                color: white;
+                font-weight: bold;
+                font-size: 2rem;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+
+            @include breakepoints(medium) {
+                margin-bottom: 1rem;
+
+            }
+        }
+
+
+        .Cards {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5rem;
+            padding: 2rem;
+            background-color: hsla(0, 0%, 12%, 0.678);
+            backdrop-filter: blur(.22rem);
+            border-radius: 20px;
+
+            @include breakepoints(medium) {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                a {
+                    color: white;
+                    padding: 1rem;
+                    font-size: 1rem;
+                    transition: .5s;
+
+                    @include breakepoints(medium) {
+                        font-size: .7rem;
+                    }
+
+
+                    &:hover {
+                        transform: translateX(15px);
+                        background-color: hsla(0, 0%, 7%, 0.849);
+                        border-radius: 20px;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}

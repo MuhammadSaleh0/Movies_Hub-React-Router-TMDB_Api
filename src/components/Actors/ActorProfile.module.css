@@ -1,0 +1,138 @@
+.Actor_profile {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .Actor_profile .Actor_info {
+    height: calc(100vh - 4rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+}
+
+.Actor_profile .Actor_info .Acto_name {
+  margin: 0 0 1rem;
+  color: var(--color-text);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (min-width: 992px) {
+  .Actor_profile .Actor_info .Acto_name {
+    position: absolute;
+    top: 10vh;
+    left: 26vw;
+    font-size: 1.5rem;
+  }
+}
+
+.Actor_profile .Actor_info .Acto_name h1 {
+  letter-spacing: 2px;
+  color: var(--color-text);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Actor_profile .Actor_info .Acto_name small {
+  display: block;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (min-width: 992px) {
+  .Actor_profile .Actor_info .image {
+    -ms-flex-preferred-size: 80vw;
+        flex-basis: 80vw;
+  }
+}
+
+.Actor_profile .Actor_info .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.Actor_profile .Actor_info .Actor_personal_info {
+  color: var(--color-text);
+}
+
+@media (min-width: 992px) {
+  .Actor_profile .Actor_info .Actor_personal_info {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+}
+
+.Actor_profile .Actor_info .Actor_personal_info .biography {
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 95%;
+}
+
+@media (min-width: 992px) {
+  .Actor_profile .Actor_info .Actor_personal_info .biography {
+    margin-top: 6rem;
+  }
+}
+
+.Actor_profile .Actor_info .Actor_personal_info .place_of_birth {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 992px) {
+  .Actor_profile .Actor_info .Actor_personal_info .place_of_birth {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.Actor_profile .Actor_movies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem 1rem;
+}
+
+.Actor_profile .Actor_movies .movie_card {
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Actor_profile .Actor_movies .movie_card:hover img {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.Actor_profile .Actor_movies .movie_card img {
+  max-width: 100%;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
