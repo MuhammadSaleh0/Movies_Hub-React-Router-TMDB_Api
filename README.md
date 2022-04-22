@@ -7,7 +7,7 @@
 ## Desktop
 
 ![desktop](./public/img/home.JPG "desktop")
-![desktop](./public/img/moiveDetails.JPG"desktop")
+![desktop](./public/img/moiveDetails.JPG "desktop")
 ![desktop](./public/img/all.JPG "desktop")
 ![desktop](./public/img/popular.JPG "desktop")
 ![desktop](./public/img/similar.JPG "desktop")
